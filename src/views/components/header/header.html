@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imported Libraries -->
+    <link rel="stylesheet" href="../ext-libs/bootstrap.css" type="text/css" />
+    <script src="../ext-libs/jquery-3.3.1.js"></script>
+
+    <style type="text/css">
+      #navbarCollapse {
+        justify-content: flex-end;
+      }
+
+      #navbarCollapse li a {
+        color: cornflowerblue;
+        font-size: 18px;
+      }
+
+      #navbarCollapse li a:hover {
+        text-decoration: underline;
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .navbar {
+        background-color: white;
+      }
+
+      body {
+        background-color: #F6EEC4;
+      }
+
+    </style>
+
+    <!-- 
+      general text style - Segeo UI
+      navlink and brand text styles - Segeo UI
+
+      landing page - F6EEC4;
+      about us color - f2e6dc
+      activities- f8eae4
+      contact us d9e8f3
+
+
+` 
+    -->
+
+    <title>Header Component</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid mx-5 py-1">
+        <a class="navbar-brand" href="#">Tech-R-US</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item pr-3">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link" href="#">Activities</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section></section>
+  </body>
+</html>
