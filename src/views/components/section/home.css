@@ -39,7 +39,7 @@
 
 .section_text h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 300px;
+  max-width: 400px;
   align-self: center;
   font-weight: lighter;
   text-align: center;
@@ -51,6 +51,22 @@
   font-size: 20px;
   text-align: center;
 }
+
+#activities_section p {
+  text-align: left;
+}
+
+#activities_section li h6 {
+  font-size: 30px;
+  text-align: left;
+}
+
+#activities_section li a {
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 
 section > div {
   justify-content: space-around;
@@ -77,7 +93,7 @@ is rendered first before the image
     order: -1;
   }
 
-  .section_text p {
+  .section_text p, .section_text ul {
     display: none;
   }
 
