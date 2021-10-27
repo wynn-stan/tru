@@ -1,0 +1,1 @@
+web: node ./src/controllers/app.js
