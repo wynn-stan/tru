@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-let port = process.env.PORT;
+let port = process.env.PORT || 8080;
 
 app.use("/views", express.static(path.join(__dirname, "../views")));
 app.use("/data", express.static(path.join(__dirname, "../models/data")));
@@ -17,9 +17,6 @@ app.route("/").get((req,res) => {
     res.redirect('/views/home/home.html');
     res.end();
 });
-
-
-
 
 //Which port should we listen to for requests
 //what should we do when we first "connect" to this port
